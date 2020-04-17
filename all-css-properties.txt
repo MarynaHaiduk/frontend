@@ -1,10 +1,52 @@
 CSS Properties
 
-A
-align-content				Specifies the alignment between the lines inside a flexible container when the items do not use all available space
-align-items					Specifies the alignment for items inside a flexible container
-align-self					Specifies the alignment for selected items inside a flexible container
-all							Resets all properties (except unicode-bidi and direction)
+### Font
+font				A shorthand property for the font-style, font-variant, font-weight, font-size/line-height, and the font-family properties
+@font-face			A rule that allows websites to download and use fonts other than the "web-safe" fonts
+font-family			Specifies the font family for text
+font-feature-settings	Allows control over advanced typographic features in OpenType fonts
+@font-feature-values	Allows authors to use a common name in font-variant-alternate for feature activated differently in OpenType
+font-kerning			Controls the usage of the kerning information (how letters are spaced)
+font-language-override	Controls the usage of language-specific glyphs in a typeface
+font-size				Specifies the font size of text
+font-size-adjust		Preserves the readability of text when font fallback occurs
+font-stretch			Selects a normal, condensed, or expanded face from a font family
+font-style				Specifies the font style for text
+font-synthesis			Controls which missing typefaces (bold or italic) may be synthesized by the browser
+font-variant			Specifies whether or not a text should be displayed in a small-caps font
+font-variant-alternates	Controls the usage of alternate glyphs associated to alternative names defined in @font-feature-values
+font-variant-caps		Controls the usage of alternate glyphs for capital letters
+font-variant-east-asian	Controls the usage of alternate glyphs for East Asian scripts (e.g Japanese and Chinese)
+font-variant-ligatures	Controls which ligatures and contextual forms are used in textual content of the elements it applies to
+font-variant-numeric	Controls the usage of alternate glyphs for numbers, fractions, and ordinal markers
+font-variant-position	Controls the usage of alternate glyphs of smaller size positioned as superscript or subscript regarding the baseline of the font
+font-weight				Specifies the weight of a font
+
+
+### Grid
+grid				A shorthand property for the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, 
+					grid-auto-columns, and the grid-auto-flow properties
+grid-area			Either specifies a name for the grid item, or this property is a shorthand property for the grid-row-start, 
+					grid-column-start, grid-row-end, and grid-column-end properties
+grid-auto-columns	Specifies a default column size
+grid-auto-flow		Specifies how auto-placed items are inserted in the grid
+grid-auto-rows		Specifies a default row size
+grid-column			A shorthand property for the grid-column-start and the grid-column-end properties
+grid-column-end		Specifies where to end the grid item
+grid-column-gap		Specifies the size of the gap between columns
+grid-column-start	Specifies where to start the grid item
+grid-gap			A shorthand property for the grid-row-gap and grid-column-gap properties
+grid-row			A shorthand property for the grid-row-start and the grid-row-end properties
+grid-row-end		Specifies where to end the grid item
+grid-row-gap		Specifies the size of the gap between rows
+grid-row-start		Specifies where to start the grid item
+grid-template			A shorthand property for the grid-template-rows, grid-template-columns and grid-areas properties
+grid-template-areas		Specifies how to display columns and rows, using named grid items
+grid-template-columns	Specifies the size of the columns, and how many columns in a grid layout
+grid-template-rows		Specifies the size of the rows in a grid layout
+
+
+### Animation
 animation					A shorthand property for all the animation-* properties
 animation-delay				Specifies a delay for the start of an animation
 animation-direction			Specifies whether an animation should be played forwards, backwards or in alternate cycles
@@ -14,6 +56,45 @@ animation-iteration-count	Specifies the number of times an animation should be p
 animation-name				Specifies a name for the @keyframes animation
 animation-play-state		Specifies whether the animation is running or paused
 animation-timing-function	Specifies the speed curve of an animation
+@keyframes			        Specifies the animation code
+
+
+### Text
+text-align				Specifies the horizontal alignment of text
+text-align-last			Describes how the last line of a block or a line right before a forced line break is aligned when text-align is "justify"
+text-combine-upright	Specifies the combination of multiple characters into the space of a single character
+text-decoration			Specifies the decoration added to text
+text-decoration-color	Specifies the color of the text-decoration
+text-decoration-line	Specifies the type of line in a text-decoration
+text-decoration-style	Specifies the style of the line in a text decoration
+text-indent				Specifies the indentation of the first line in a text-block
+text-justify			Specifies the justification method used when text-align is "justify"
+text-orientation		Defines the orientation of the text in a line
+text-overflow			Specifies what should happen when text overflows the containing element
+text-shadow				Adds shadow to text
+text-transform			Controls the capitalization of text
+text-underline-position	Specifies the position of the underline which is set using the text-decoration property
+word-break		Specifies how words should break when reaching the end of a line
+word-spacing	Increases or decreases the space between words in a text
+word-wrap		Allows long, unbreakable words to be broken and wrap to the next line
+
+
+### Flex
+flex				A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
+flex-basis			Specifies the initial length of a flexible item
+flex-direction		Specifies the direction of the flexible items
+flex-flow			A shorthand property for the flex-direction and the flex-wrap properties
+flex-grow			Specifies how much the item will grow relative to the rest
+flex-shrink			Specifies how the item will shrink relative to the rest
+flex-wrap			Specifies whether the flexible items should wrap or not
+
+
+
+A
+align-content				Specifies the alignment between the lines inside a flexible container when the items do not use all available space
+align-items					Specifies the alignment for items inside a flexible container
+align-self					Specifies the alignment for selected items inside a flexible container
+all							Resets all properties (except unicode-bidi and direction)
 B
 backface-visibility		Defines whether or not the back face of an element should be visible when facing the user
 background				A shorthand property for all the background-* properties
@@ -94,55 +175,7 @@ E
 empty-cells			Specifies whether or not to display borders and background on empty cells in a table
 F
 filter				Defines effects (e.g. blurring or color shifting) on an element before the element is displayed
-flex				A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
-flex-basis			Specifies the initial length of a flexible item
-flex-direction		Specifies the direction of the flexible items
-flex-flow			A shorthand property for the flex-direction and the flex-wrap properties
-flex-grow			Specifies how much the item will grow relative to the rest
-flex-shrink			Specifies how the item will shrink relative to the rest
-flex-wrap			Specifies whether the flexible items should wrap or not
 float				Specifies whether or not a box should float
-font				A shorthand property for the font-style, font-variant, font-weight, font-size/line-height, and the font-family properties
-@font-face			A rule that allows websites to download and use fonts other than the "web-safe" fonts
-font-family			Specifies the font family for text
-font-feature-settings	Allows control over advanced typographic features in OpenType fonts
-@font-feature-values	Allows authors to use a common name in font-variant-alternate for feature activated differently in OpenType
-font-kerning			Controls the usage of the kerning information (how letters are spaced)
-font-language-override	Controls the usage of language-specific glyphs in a typeface
-font-size				Specifies the font size of text
-font-size-adjust		Preserves the readability of text when font fallback occurs
-font-stretch			Selects a normal, condensed, or expanded face from a font family
-font-style				Specifies the font style for text
-font-synthesis			Controls which missing typefaces (bold or italic) may be synthesized by the browser
-font-variant			Specifies whether or not a text should be displayed in a small-caps font
-font-variant-alternates	Controls the usage of alternate glyphs associated to alternative names defined in @font-feature-values
-font-variant-caps		Controls the usage of alternate glyphs for capital letters
-font-variant-east-asian	Controls the usage of alternate glyphs for East Asian scripts (e.g Japanese and Chinese)
-font-variant-ligatures	Controls which ligatures and contextual forms are used in textual content of the elements it applies to
-font-variant-numeric	Controls the usage of alternate glyphs for numbers, fractions, and ordinal markers
-font-variant-position	Controls the usage of alternate glyphs of smaller size positioned as superscript or subscript regarding the baseline of the font
-font-weight				Specifies the weight of a font
-G
-grid				A shorthand property for the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, 
-					grid-auto-columns, and the grid-auto-flow properties
-grid-area			Either specifies a name for the grid item, or this property is a shorthand property for the grid-row-start, 
-					grid-column-start, grid-row-end, and grid-column-end properties
-grid-auto-columns	Specifies a default column size
-grid-auto-flow		Specifies how auto-placed items are inserted in the grid
-grid-auto-rows		Specifies a default row size
-grid-column			A shorthand property for the grid-column-start and the grid-column-end properties
-grid-column-end		Specifies where to end the grid item
-grid-column-gap		Specifies the size of the gap between columns
-grid-column-start	Specifies where to start the grid item
-grid-gap			A shorthand property for the grid-row-gap and grid-column-gap properties
-grid-row			A shorthand property for the grid-row-start and the grid-row-end properties
-grid-row-end		Specifies where to end the grid item
-grid-row-gap		Specifies the size of the gap between rows
-grid-row-start		Specifies where to start the grid item
-grid-template			A shorthand property for the grid-template-rows, grid-template-columns and grid-areas properties
-grid-template-areas		Specifies how to display columns and rows, using named grid items
-grid-template-columns	Specifies the size of the columns, and how many columns in a grid layout
-grid-template-rows		Specifies the size of the rows in a grid layout
 H
 hanging-punctuation	Specifies whether a punctuation character may be placed outside the line box
 height				Sets the height of an element
@@ -153,8 +186,6 @@ image-rendering		Gives a hint to the browser about what aspects of an image are 
 isolation			Defines whether an element must create a new stacking content
 J
 justify-content		Specifies the alignment between the items inside a flexible container when the items do not use all available space
-K
-@keyframes			Specifies the animation code
 L
 left				Specifies the left position of a positioned element
 letter-spacing		Increases or decreases the space between characters in a text
@@ -215,20 +246,6 @@ scroll-behavior			Specifies whether to smoothly animate the scroll position in a
 T
 tab-size				Specifies the width of a tab character
 table-layout			Defines the algorithm used to lay out table cells, rows, and columns
-text-align				Specifies the horizontal alignment of text
-text-align-last			Describes how the last line of a block or a line right before a forced line break is aligned when text-align is "justify"
-text-combine-upright	Specifies the combination of multiple characters into the space of a single character
-text-decoration			Specifies the decoration added to text
-text-decoration-color	Specifies the color of the text-decoration
-text-decoration-line	Specifies the type of line in a text-decoration
-text-decoration-style	Specifies the style of the line in a text decoration
-text-indent				Specifies the indentation of the first line in a text-block
-text-justify			Specifies the justification method used when text-align is "justify"
-text-orientation		Defines the orientation of the text in a line
-text-overflow			Specifies what should happen when text overflows the containing element
-text-shadow				Adds shadow to text
-text-transform			Controls the capitalization of text
-text-underline-position	Specifies the position of the underline which is set using the text-decoration property
 top						Specifies the top position of a positioned element
 transform				Applies a 2D or 3D transformation to an element
 transform-origin		Allows you to change the position on transformed elements
@@ -249,9 +266,6 @@ W
 white-space		Specifies how white-space inside an element is handled
 widows			Sets the minimum number of lines that must be left at the top of a page when a page break occurs inside an element
 width			Sets the width of an element
-word-break		Specifies how words should break when reaching the end of a line
-word-spacing	Increases or decreases the space between words in a text
-word-wrap		Allows long, unbreakable words to be broken and wrap to the next line
 writing-mode	Specifies whether lines of text are laid out horizontally or vertically
 Z
 z-index			Sets the stack order of a positioned element
