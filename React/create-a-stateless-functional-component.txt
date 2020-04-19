@@ -1,0 +1,5 @@
+const MyComponent = function() {
+  return (
+    <div>To create a component with a function</div>
+  );
+}
