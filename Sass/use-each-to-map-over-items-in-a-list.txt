@@ -1,0 +1,34 @@
+<style type='text/sass'>
+  @each $color in blue, black, red {
+  .#{$color}-bg {background-color: $color;}
+  }
+
+  div {
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div class="blue-bg"></div>
+<div class="black-bg"></div>
+<div class="red-bg"></div>
+
+<!--
+Sass also offers the @each directive which loops over each item in a list or map. 
+
+// List
+@each $color in blue, red, green {
+  .#{$color}-text {color: $color;}
+}
+
+// Map
+$colors: (color1: blue, color2: red, color3: green);
+
+@each $key, $color in $colors {
+  .#{$color}-text {color: $color;}
+}
+
+
+Both of the above code examples are converted into the following CSS:
+.blue-text {color: blue;} 
+-->

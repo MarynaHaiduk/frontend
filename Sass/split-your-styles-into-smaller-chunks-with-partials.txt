@@ -1,0 +1,2 @@
+// The _variables.scss file
+@import 'variables'
