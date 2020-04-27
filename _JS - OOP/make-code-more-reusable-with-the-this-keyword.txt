@@ -1,0 +1,8 @@
+let dog = {
+  name: "Spot",
+  numLegs: 4,
+  // this refers to the object that the method is associated with
+  sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+};
+
+dog.sayLegs();
